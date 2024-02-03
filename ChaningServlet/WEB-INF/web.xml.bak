@@ -1,0 +1,61 @@
+<web-app>
+   <context-param>
+       <param-name>driver</param-name>
+	   <param-value>Oracle.jdbc.OracleDriver</param-value>
+	</context-param>
+
+	<context-param>
+	   <param-name>url</param-name>
+	   <param-value>jdbc:oracle:thin:@localhost:1521:XE</param-value>
+	 <context-param>
+
+     <context-param>
+	      <param-name>dbuser<param-name>
+		  <param-value>System</param-value>
+	 </context-param>
+
+	 <context-param>
+		   <param-name>dbpwd</param-name>
+		   <param-value>tiger</param-value>
+	 </context-param>
+
+	 <context-param>
+		  <param-name>abc</param-name>
+		  <param-value>Dbser</param-value>
+	 </context-param> 
+
+	 <servlet>
+	     <servlet-name>bha</servlet-name>
+		 <servlet-class>DBSrv</servlet-class>
+     </servlet>
+
+     <servlet-mapping>
+	    <servlet-name>abc<servlet-name>
+		<url-pattern>/dburl</url-pattern>
+     </servlet-mapping>
+
+     <servlet>
+		  <servlet-name>xyz</servlet-name>
+		  <servlet-class>ErrSrv</servlet-class>
+     </servlet>
+
+	 <servlet-mapping>
+	       <servlet-name>xyz</servlet-name>
+		   <url-pattern>/eurl</url-pattern>
+     </servlet-mapping>
+
+	 <servlet>
+	     <servlet-name>H</servlet-name>
+		 <servlet-class>HeaderSrv</servlet-class>
+	 </servlet>
+
+	 <servlet-mapping>
+	     <servlet-name>H</servlet-name>
+		 <url-pattern>/headerurl</url-pattern>
+	 </servlet-mapping>
+
+	 <welcome-file-list>
+	     <welcome-file>input.html</welcome-file>
+	  </welcome-file-list>
+
+</web-app

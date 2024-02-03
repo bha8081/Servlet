@@ -1,0 +1,39 @@
+package com.servlets;
+import java.io.IOException;
+import javax.servlet.*;
+
+public class FirstServlet implements Servlet {
+    //Life cycle Mathods;
+    
+    ServletConfig conf;
+    
+    public void init(ServletConfig conf)
+    {
+       this.conf = conf;
+        System.out.println("Creating Object.....");
+    }
+    
+    public void service(ServletRequest req, ServletResponse resp) throws ServletException, IOException
+    {
+        System.out.println("Servicing..........");
+//        resp.setContentType("text/html");
+//       PrintWriter out=resp.getWriter();
+//       out.println("<h1>this is my output from servlet method:</h1>");
+    }
+    
+    public void destroy() 
+    {
+        System.out.println("going to destroy servlet objec");
+    }
+    // Non life cycle mathode;
+    public ServletConfig getServletConfig()
+    {
+        return  this.conf;
+    }
+    
+    public String getServletInfo()
+    {
+        return "this servlet is created by Bhavesh Yadav";
+    }
+    
+}

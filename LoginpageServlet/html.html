@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Form</title>
+        <style>
+            .contener {
+                width: 30%;
+                border: 1px solid black;
+                margin: auto;
+                padding: 20px;
+                font-size: 20px;
+            }
+            
+            #myform table tr td input {
+                font-size: 20px;
+            }
+        </style>
+        
+    </head>
+    <body>      
+        <div class="contener">
+            <h1>Registration Form</h1>
+            <form action="RegistrationServlet" method="post"></form>
+            <table>
+                <tr>
+                    <td>Enter your name:</td>
+                    <td><input type="text" name="user_name" placeholder="Enter Name"></td>
+                </tr>
+                
+                <tr>
+                    <td>Enter you email id:</td>
+                    <td><input type="text" name="user-mail" placeholder="jo12@gamil.com"></td>
+                </tr>
+                
+                <tr>
+                    <td>Enter your password:</td>
+                    <td><input type="password" name="user_password" placeholder="Enter Password"></td>
+                </tr>
+            
+                <tr>
+                    <td>Gender:</td>
+                    <td><input type="radio" name="user_gender" value="male">Male &nbsp; &nbsp; <input type="radio" name="user_gender" value="female">Female</td>  
+                </tr>
+                
+                <tr>
+                    <td>
+                        Select your course
+                    </td>
+                    <td>
+                        <select name="user_course">
+                            <option value="Java">Java</option>
+                            <option value="php">php</option>
+                            <option value="CSS">CSS</option>
+                            <option value="Node.js">Node.js</option> 
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr style="text-align: right">
+                    <td>
+                        <input type="checkbox" value="checkbox" name="condition" />
+                    </td>
+                    <td>Agree terms and conditions</td>
+                </tr>
+                
+                <tr style="text-align: right">
+                    <td>
+                        <button type="submit">Register</button>
+                        <button type="reset">Reset</button>
+                    </td>
+                </tr>
+                             
+            </table>
+        </div>
+    </body>
+</html>

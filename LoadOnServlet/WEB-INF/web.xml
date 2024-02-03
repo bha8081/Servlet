@@ -1,0 +1,12 @@
+<web-app>
+     <servlet>
+	      <servlet-name>DoPost</servlet-name>
+		  <servlet-class>LoadData_Servlet</servlet-class>
+		  <load-on-startup> 6 </load-on-startup>
+	 </servlet>
+
+	 <servlet-mapping>
+	          <srevlet-name>DoPost</servlet-name>
+			  <url-pattren>/post</url-pattren>
+	 </servlet-mapping>
+</web-app>

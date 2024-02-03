@@ -1,0 +1,16 @@
+<web-app>
+     <servlet>
+	      <servlet-name>god</servlet-name>
+		  <servlet-class>Context_Servlet<servlet-class>
+	 </servlet>
+
+	 <context-param>
+	    <param-name>dname</param-name>
+		<param-value>orcal.jdbc.driver.OrcalDriver<param-value>
+	</context-param>
+
+	<servlet-mapping>
+	   <servlet-name>god</servlet-name>
+	   <url-pattern>/drive</url-pattern>
+	<servlet-mapping>
+</web-app>

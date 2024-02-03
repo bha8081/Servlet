@@ -1,0 +1,21 @@
+<web-app>
+    <servlet>
+        <servlet-name>bhavesh</servlet-name>
+        <servlet-class>Servlet1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>bhavesh</servlet-name>
+        <servlet-class>Servlet2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>bhavesh</servlet-name>
+        <url-pattern>/go</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>bhavesh</servlet-name>
+        <url-pattern>/go2</url-pattern>
+    </servlet-mapping>
+	<welcome-file-list>
+	    <welcome-file>input.html</welcome-file>
+    </welcome-file-list>
+</web-app>

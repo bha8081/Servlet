@@ -1,0 +1,15 @@
+<web-app>
+    
+    <servlet>
+        <servlet-name>register</servlet-name>
+        <servlet-class>ServletDemo</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>register</servlet-name>
+        <url-pattern>/bhai</url-pattern>
+    </servlet-mapping>
+	<welcome-file-list>
+	<welcome-file>input.html</welcom-file>
+	</welcome-file-list>
+</web-app>

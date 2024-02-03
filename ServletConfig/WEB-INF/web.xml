@@ -1,0 +1,17 @@
+<web-app>
+    <servlet>
+        <servlet-name>bhavesh</servlet-name>
+		<servlet-class>ServletConfigDemo</servlet-class>
+
+	  <init-param>
+	     <param-name>driver</param-name>
+		 <param-value>orcale.jdbc.driver.OrcaleDriver</param-value>
+	  </init-param>
+
+	</servlet>
+
+	<servlet-mapping>
+	  <srevlet-name>bhavesh</servlet-name>
+	  <url-pattern>/conf</url-pattern>
+    </servlet-mapping>
+</web-app>

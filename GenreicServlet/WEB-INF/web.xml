@@ -1,0 +1,9 @@
+<web-app>
+    <servlet-name>hello</servlet-name>
+	<servlet-class>SecondServlet</servlet-class>
+</web-app>
+
+<servlet-mapping>
+     <servlet-name>hello</servlet-name>
+	 <url-pattern>/cr</url-pattern>
+</servlet-mapping>

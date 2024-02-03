@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+    <from action="servlet1">
+	   <input type="text" name="name" placeholder="Enter your name here " style="font-size: 35px;">
+
+	   <button type="submit" style="Font-size: 35px;">
+	   Go to servlet 1
+	   </button>
+	  </from>
+ </body>
+</html>

@@ -1,0 +1,14 @@
+<web-app>
+  <!--servlet decleration-->  
+  <servlet>
+      <servlet-name>first</servlet-name>
+      <servlet-class>com.servlets.FirstServlet</servlet-class>
+  </servlet>
+  
+  <!--mapping-->
+  
+  <servlet-mapping>
+      <servlet-name>first</servlet-name>
+      <url-pattern>/web</url-pattern>
+  </servlet-mapping>
+</web-app>
